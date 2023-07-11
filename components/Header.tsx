@@ -9,7 +9,7 @@ const HEADER_HEIGHT = rem(60)
 const useStyles = createStyles((theme) => ({
     root: {
         position: 'relative',
-        zIndex: 1,
+        zIndex: 2,
     },
 
     dropdown: {
