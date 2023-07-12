@@ -1,8 +1,9 @@
 import { createStyles, Container, Group, ActionIcon, rem } from '@mantine/core'
-import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram, IconBrandDiscord } from '@tabler/icons-react'
 import Image from 'next/image'
 import Logo from '@/public/Logo.svg'
 import Link from 'next/link'
+import DiscordLogo from '@/public/Discord.svg'
+import TwitterLogo from '@/public/Twitter.svg'
 
 const useStyles = createStyles((theme) => ({
     footer: {
@@ -40,12 +41,12 @@ export default function FooterWithSocialMedias() {
                 <Group spacing={0} className={classes.links} position='right' noWrap>
                     <Link href={'https://discord.gg/Az8McWNAcg'}>
                         <ActionIcon size='lg'  aria-label={'Join Our Discord'}>
-                            <IconBrandDiscord size='1.05rem' stroke={1.5} />
+                            <Image src={DiscordLogo} alt='Discord Logo' height={30} width={30} />
                         </ActionIcon>
                     </Link>
                     <Link href={'https://twitter.com/nawafalqari2'}>
                         <ActionIcon size='lg' aria-label={'My Twitter Account'}>
-                            <IconBrandTwitter size='1.05rem' stroke={1.5} />
+                            <Image src={TwitterLogo} alt='Twitter Logo' height={30} width={30} />
                         </ActionIcon>
                     </Link>
                 </Group>
