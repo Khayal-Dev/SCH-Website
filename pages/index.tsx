@@ -60,14 +60,14 @@ const Home: NextPage = () => {
                 <meta property="og:url" content="https://sch.nawafdev.com/" />
                 <meta property="og:title" content="SCH" />
                 <meta property="og:description" content="SCH" />
-                <meta property="og:image" content={Logo.src} />
+                <meta property="og:image" content={"https://raw.githubusercontent.com/nawafalqari/sch/main/logo/sch_t.png"} />
 
                 {/* Twitter */}
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:url" content="https://sch.nawafdev.com/" />
                 <meta property="twitter:title" content="SCH" />
                 <meta property="twitter:description" content="SCH" />
-                <meta property="twitter:image" content={Logo.src} />
+                <meta property="twitter:image" content={"https://raw.githubusercontent.com/nawafalqari/sch/main/logo/sch_t.png"} />
             </Head>
 
             <HeroHeader />
