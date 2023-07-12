@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import { Text, rem } from '@mantine/core'
-import { IconBrandOpenSource, IconCookieOff, IconPalette, IconServer2, IconSlash, IconSpy } from '@tabler/icons-react'
+import { IconLock, IconCookieOff, IconHourglass, IconMailFast, IconServer2, IconSlash } from '@tabler/icons-react'
 import FeaturesCards from '@/components/FeaturesCards'
 import HeroHeader from '@/components/HeroHeader'
 import Head from 'next/head'
@@ -15,34 +15,34 @@ const Home: NextPage = () => {
 
     const features: features = [
         {
-            title: 'Privacy',
-            description: `You don't have to tell us about your name, age, email, nationality or any thing about you.`,
-            icon: <IconSpy size={rem(50)} stroke={2} color={'#FFFFFF'} />,
+            title: 'End-to-End Encryption',
+            description: `SCH ensures the privacy and security of user conversations by implementing robust end-to-end encryption. Messages exchanged between users are encrypted and can only be decrypted by the intended recipients.`,
+            icon: <IconLock size={rem(50)} stroke={2} color={'#FFFFFF'} />,
         },
         {
-            title: 'No Cookies',
-            description: `We don't use cookies to increase our communication platform's user privacy.`,
+            title: 'Secure and Temporary Messages',
+            description: `SCH ensures that messages are not stored on any servers or devices. Once all parties exit the conversation room, the messages are completely wiped out, leaving no trace behind. This temporary nature of messages adds an extra layer of security and privacy to your conversations.`,
+            icon: <IconHourglass size={rem(50)} stroke={2} color={'#FFFFFF'} />,
+        },
+        {
+            title: 'Trustworthy Communication Environment',
+            description: `SCH prioritizes user privacy by avoiding the use of cookies, trackers, and data collection mechanisms. It aims to create a secure and private communication environment where users can exchange messages without concerns about their privacy being compromised.`,
             icon: <IconCookieOff size={rem(50)} stroke={2} color={'#FFFFFF'} />,
         },
         {
-            title: 'Your Own Server',
-            description: `You can use our default server but if you don't want use our server then you can use your own server.`,
+            title: 'Host Your Own Servers',
+            description: `SCH allows users to host their own chat servers, giving them full control over their data and privacy. You can set up your own server infrastructure and customize the environment according to your needs.`,
             icon: <IconServer2 size={rem(50)} stroke={2} color={'#FFFFFF'} />,
         },
         {
-            title: 'Themes',
-            description: 'You can choose theme from many different themes.',
-            icon: <IconPalette size={rem(50)} stroke={2} color={'#FFFFFF'} />,
-        },
-        {
-            title: 'Commands',
-            description: 'We made some commands to make our communication platform easy to use.',
+            title: 'Command-Based Chat',
+            description: `SCH supports various commands to enhance your chat experience. You can use commands like /nick to change your nickname, /whisper to send private messages, and more. These commands provide additional functionality and customization options.`,
             icon: <IconSlash size={rem(50)} stroke={2} color={'#FFFFFF'} />,
         },
         {
-            title: 'Open Source',
-            description: 'Our communication platform is open source so you can check code and make your own features.',
-            icon: <IconBrandOpenSource size={rem(50)} stroke={2} color={'#FFFFFF'} />,
+            title: 'Lightweight and Fast',
+            description: `SCH is designed to be lightweight and fast, ensuring quick message delivery and a responsive user interface. The application optimizes resource usage to provide a seamless messaging experience.`,
+            icon: <IconMailFast size={rem(50)} stroke={2} color={'#FFFFFF'} />,
         },
     ]
 
